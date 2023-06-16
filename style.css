@@ -1,0 +1,121 @@
+:root {
+    --primary-color: rgb(33, 33, 33);
+    --secondary-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 1.7rem;
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    width: 800px;
+    padding: 20px 0;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    margin: 0.5em;
+}
+
+input {
+    font-size: 0.9rem;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    margin: 0 2em;
+    padding: 1.2em;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0 1em;
+    padding: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkslateblue;
+}
+  
+/* Average */
+
+.average-wrapper {
+    display: flex;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 20px;
+    height: 90px;
+    margin: 70px;
+    padding: 0 30px;
+    align-items: center;
+}
+
+.average-wrapper .average {
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+/* List */
+
+.col {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col h3 {
+    margin: 20px 0 10px 0;
+}
+  
+.names, .ages {
+    display: inline-block;
+    padding: 1em;
+    min-width: 20em;
+}
+    
+li {
+    padding: 0.4em;
+    list-style: none;
+    color: var(--primary-color);
+}
+
+li:nth-of-type(odd) {
+    background: whitesmoke;
+}
+    
+li:nth-of-type(even) {
+    background: white;
+}
